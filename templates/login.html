@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="/login" method='post' >
+    {% if not password_error or username_error %}
+    <span class='error' >{{ db_error }}</span>
+    {% endif %}
+    <label for="">Username</label>
+    <input type="text" name='username' value='{{ username }}' ><span class='error' >{{ username_error }}</span>
+    <label for="">Password</label>
+    <input type="password" name='password' ><span class='error' >{{ password_error }}</span>
+    <input type="submit">
+</form>
+<span><a href="/signup">Sign up</a></span>
+
+{% endblock %}

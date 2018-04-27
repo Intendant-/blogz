@@ -1,0 +1,15 @@
+form {
+    display: inline-block;
+    max-width: 50%;
+}
+form input {
+    display: block;
+    max-width: 100%;
+    margin: 5px;
+    position: relative;
+}
+.error {
+    color: red;
+    position: absolute;
+    left: 300px;
+}

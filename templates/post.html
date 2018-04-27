@@ -6,6 +6,9 @@
         <span>
             <p>{{ post.body }} </p>
         </span>
+        <i>
+            <p>Written by <a href="/blog?user_id={{ author.id }}">{{ author.username }}</a></p>
+        </i>
     </div>
 
 {% endblock %}

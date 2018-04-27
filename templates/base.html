@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
-    <style type='text/css' >
-    form {
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='mainpage.css') }}">
+    <style> 
+        form {
         display: inline-block;
         max-width: 50%;
-    }
-    form input {
-        display: block;
-        max-width: 100%;
-        margin: 5px;
-        position: relative;
-    }
-    .error {
-        color: red;
-        position: absolute;
-        left: 300px;
-    }
+        }
+        form input {
+            display: block;
+            max-width: 100%;
+            margin: 5px;
+            position: relative;
+        }
+        .error {
+            color: red;
+            position: absolute;
+            left: 300px;
+        }
     </style>
 </head>
 <body>
     <ul>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/blog">Main Blog Page</a></li>
         <li><a href="/newpost">Add a Blog Entry</a></li>
     </ul>

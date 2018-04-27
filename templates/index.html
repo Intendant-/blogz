@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+   <h1>Authors</h1>
+
+    {% if authors|length > 0 %}
+        {% for author in authors: %}
+            <div class='blog_entries' >
+                <a href="/blog?user_id={{ author.id }}"><h2>{{ author.username }} </h2></a>
+            </div>
+        {% endfor %}
+        
+    {% endif %}
+
+{% endblock %}
